@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>What do you looking for?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="../static/indlogin.css"> 
+
+    </head>
+
+    <body>
+
+        <form class="grid" action="{{ url_for('freffi') }}" method="post">
+            <!--center>
+                {% if name  %}
+                <h3 style="color: blue;">Hello {{name}},How are you ? </h3>
+
+                {% endif %}
+            </center-->
+
+            <label for = "inf">Halaman Informasi </label>
+            <input type="text" name="info" id="info">
+
+            <center><input type="Submit" class="file_submit"></center>
+
+
+
+
+        </form>
+
+
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+    </body>
+
+
+</html>

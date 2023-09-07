@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Form Log-In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="../static/indlogin.css"> 
+
+    </head>
+
+    <body>
+
+        <form class="grid" action="/frlgin" method="post">
+            <center>
+                {% if name  %}
+                <h3 style="color: blue;">Hello {{name}},How are you ? </h3>
+
+                {% endif %}
+            </center>
+
+            <label for = "address">Tujuan </label>
+            <input type="text" name="tj" id="tj">
+
+            <label for = "email">Element Email </label>
+            <input type="text" name="lem" id="lem">
+
+            <label for = "email">Element Passwrd </label>
+            <input type="text" name="emp" id="emp">
+
+            <label for = "email">Email </label>
+            <input type="text" name="em" id="em">
+
+            <label for = "pswd">Passwrd </label>
+            <input type="text" name="pwd" id="pwd">
+
+            <center><input type="Submit" class="file_submit"></center>
+
+
+
+
+        </form>
+
+
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+    </body>
+
+
+</html>

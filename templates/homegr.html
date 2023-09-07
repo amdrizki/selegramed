@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <br>
+    <br>
+    <center>
+        <font size="5" style="color:white;">Gramedia</font>
+        
+    </center>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gramed Sele</title>
+	<link rel="stylesheet" href="../static/index.css">
+    
+
+</head>
+<body>
+    <div class="center">
+        
+        <form class="grid" action="/result" method="post">
+            <label>
+                <center>
+                    {% if name  %}
+                    <h3 style="color: blue;">web  {{name}}</h3>
+
+                    {% endif %}
+                </center>
+            </label>
+
+
+
+
+        </form>
+
+        <form action="{{ url_for('grlogin') }}" method="post">
+            <label>Correctness</label>
+            <center>
+                <button type="submit" name="lgn">Correctness</button>
+                <input class="input_label" type="text" name="lg" id="lg">
+            </center>
+        </form>
+
+        <form action="{{ url_for('grberanda') }}" method="post">
+
+            
+            <label>Reliability</label>
+            <center>
+                <button type="submit" name="hme">Reliability</button>
+                <input class="input_label" type="text" name="brd" id="brd">
+            </center>
+        </form>
+
+        <form action="{{ url_for('effi') }}" method="post">
+            <label>Efficiency</label>
+            <center>
+                <button type="submit" name="ff">Efficiency</button>
+                <input class="input_label" type="text" name="efii" id="efii">
+            </center>
+        </form>
+
+        <!--form action="{{ url_for('grcari') }}" method="post">
+            <label>Search/Cari</label>
+            <center>
+                <button type="submit" name="cari">Search</button>
+                <input type="text" name="cri" id="cri">
+            </center>
+        </form-->
+
+        <form action="{{ url_for('grlogin') }}" method="post">
+            <label>Integrity</label>
+            <center>
+                <button type="submit" name="lgn">Integrity</button>
+                <input class="input_label" type="text" name="lg" id="lg">
+            </center>
+        </form>
+
+        <form action="{{ url_for('uss') }}" method="post">
+            <label>Usability</label>
+            <center>
+                <button type="submit" name="lgn">Usability</button>
+                <input class="input_label" type="text" name="lg" id="lg">
+            </center>
+        </form>
+
+        <form action="{{ url_for('flexx') }}" method="post">
+            <label>Flexibility</label>
+            <center>
+                <button type="submit" name="lgn">Flexibility</button>
+                <input class="input_label" type="text" name="lg" id="lg">
+            </center>
+        </form>
+
+        <form action="{{ url_for('grberanda') }}" method="post">
+            <label>Testability</label>
+            <center>
+                <button type="submit" name="lgn">Testability</button>
+                <input class="input_label" type="text" name="lg" id="lg">
+            </center>
+        </form>
+
+        <form action="{{ url_for('grberanda') }}" method="post">
+            <label>Portability</label>
+            <center>
+                <button type="submit" name="lgn">Portability</button>
+                <input class="input_label" type="text" name="lg" id="lg">
+            </center>
+        </form>
+
+
+        <!--form action="{{ url_for('grdaftar') }}" method="post">
+            <label>Register/Daftar</label>
+            <center>
+                <button type="submit" value="Register" id="dftr">Register</button>
+                <input class="input_label" type="text" name="dt" id="dtar" readonly>
+                <input type="text" name="cari" id="cari">
+            </center>
+            <script src="../static/jquery.min.js"></script> 
+            <script>
+                $("#dftr").click(function(){ 
+            
+                    document.getElementById("dtar").value = "...Processing"
+            
+                    const myTimeout = setTimeout(myGreeting, 5000);
+            
+                    function myGreeting() {
+                        document.getElementById("dtar").value = "OKE"
+                    }   
+                })
+            </script>
+        </form-->
+    </div>
+</body>
+</html>
